@@ -1,0 +1,26 @@
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Data.deps.json
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Data.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Data.pdb
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Shared.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Shared.pdb
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.csproj.AssemblyReference.cache
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.AssemblyInfoInputs.cache
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.AssemblyInfo.cs
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.csproj.CoreCompileInputs.cache
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.csproj.CopyComplete
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.pdb
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Data.deps.json
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Data.dll
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Data.pdb
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Shared.dll
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\bin\Debug\netcoreapp3.1\Payroll.Domain.Shared.pdb
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.csproj.AssemblyReference.cache
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.AssemblyInfoInputs.cache
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.AssemblyInfo.cs
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.csproj.CoreCompileInputs.cache
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.csproj.CopyComplete
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.dll
+C:\Users\nan010421\OneDrive - Paycor, Inc\Desktop\Payroll Domain API with DB Files\Payroll.Domain.Api\Payroll.Domain.Data\obj\Debug\netcoreapp3.1\Payroll.Domain.Data.pdb
