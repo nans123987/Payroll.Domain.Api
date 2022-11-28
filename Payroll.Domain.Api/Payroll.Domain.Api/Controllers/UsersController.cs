@@ -3,6 +3,7 @@ using Payroll.Domain.Api.Authorization;
 using Payroll.Domain.Business.Services;
 using Payroll.Domain.Shared.Models;
 using System.Threading.Tasks;
+using AllowAnonymous = Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute;
 
 namespace Payroll.Domain.Api.Controllers
 {
@@ -17,7 +18,7 @@ namespace Payroll.Domain.Api.Controllers
             _userService = userService;
         }
 
-        [Microsoft.AspNetCore.Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("[action]")]
         public async Task<IActionResult> Authenticate(AuthenticateRequest model)
         {
