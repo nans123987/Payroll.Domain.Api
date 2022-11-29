@@ -1,11 +1,4 @@
 ﻿using Dapper;
-using Microsoft.Extensions.Logging;
-using Payroll.Domain.Data.Repositories;
-using Payroll.Domain.Shared.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Payroll.Domain.Business.Services
 {
@@ -26,6 +19,13 @@ namespace Payroll.Domain.Business.Services
             IBenefitPlanRepository benefitPlanRepository,
             IEnumerable<IPayRuleEngine> engines)
         {
+            ArgumentNullException.ThrowIfNull(logger, nameof(logger));
+            ArgumentNullException.ThrowIfNull(payrollContext, nameof(payrollContext));
+            ArgumentNullException.ThrowIfNull(employeeRepository, nameof(employeeRepository));
+            ArgumentNullException.ThrowIfNull(benefitPlanRepository, nameof(benefitPlanRepository));
+            ArgumentNullException.ThrowIfNull(engines, nameof(engines));
+
+
             _logger = logger;
             _payrollContext = payrollContext;
             _employeeRepository = employeeRepository;
@@ -53,13 +53,11 @@ namespace Payroll.Domain.Business.Services
                 }
 
                 //aggregate results
-                var employeePayPeriodDeductions = GetEmployeePayperiodDeductions(clientId);
-
-                return employeePayPeriodDeductions;
+                return GetEmployeePayperiodDeductions(clientId);
             }
             catch (Exception ex)
             {
-                _logger.LogError($@"#PayrollService: Failed to process pay period data for clientId:{clientId}", ex);
+                _logger.LogError($"#PayrollService: Failed to process pay period data for clientId:{clientId}", ex);
                 throw;
             }
         }
@@ -80,7 +78,7 @@ namespace Payroll.Domain.Business.Services
                             {
                                 EmployeeId = employee.Id,
                                 EmployeeName = $"{employee.LastName},{employee.FirstName}",
-                                NetPay = employee.BasePay
+                                NetPay = Employee.BasePay
                             }
                         );
 
@@ -106,14 +104,14 @@ namespace Payroll.Domain.Business.Services
 
             var employeeIds = _payrollContext.Employees.Select(employee => employee.Id);
 
-            if (employeeIds.Count() == 0)
+            if (!employeeIds.Any())
                 throw new ArgumentNullException(@$"#PayrollService: No Employees returned for clientId: {clientId}");
 
             employeeIds = employeeIds.Distinct();
 
             //read master data and populate the context
             var employeeDependents = await _employeeRepository
-                                            .GetEmployeeDependentsAsync(clientId, employeeIds.AsList());
+                                            .GetEmployeeDependentsAsync(clientId, employeeIds.ToList());
             var employeeBenefits = await _employeeRepository.
                                             GetEmployeeBenefitsAsync(clientId, employeeIds.AsList());
 

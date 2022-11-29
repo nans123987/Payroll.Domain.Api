@@ -1,10 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Payroll.Domain.Business;
+﻿using Payroll.Domain.Business;
 using Payroll.Domain.Business.Configuration;
 using Payroll.Domain.Business.PayRuleEngines;
-using Payroll.Domain.Business.Services;
-using Payroll.Domain.Shared.Utils;
 
 namespace Payroll.Domain.Api.Configuration
 {
@@ -14,6 +10,7 @@ namespace Payroll.Domain.Api.Configuration
         {
             //context
             services.AddScoped<IPayrollContext, PayrollContext>();
+
             //engines
             services.AddScoped<IPayRuleEngine, EmployeeDeductionEngine>();
             services.AddScoped<IPayRuleEngine, EmployeeDependentDeductionEngine>();

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace Payroll.Domain.Data
@@ -15,17 +13,18 @@ namespace Payroll.Domain.Data
 
         public DBConnectionFactory(IDictionary<Database, string> connectionsDictionary)
         {
+            ArgumentNullException.ThrowIfNull(connectionsDictionary, nameof(connectionsDictionary));
+
             _connectionsDictionary = connectionsDictionary;
         }
 
         public IDbConnection CreateDbConnection(Database connectionName)
         {
-            if (_connectionsDictionary.TryGetValue(connectionName, out string connectionString))
+            if (_connectionsDictionary.TryGetValue(connectionName, out string? connectionString))
             {
                 return new SqlConnection(connectionString);
             }
-
-            throw new ArgumentNullException();
+            throw new ArgumentNullException($"{connectionString}");
         }
     }
 }

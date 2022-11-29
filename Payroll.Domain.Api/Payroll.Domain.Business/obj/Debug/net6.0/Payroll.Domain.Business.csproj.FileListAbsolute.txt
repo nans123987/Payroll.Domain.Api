@@ -1,0 +1,17 @@
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\bin\Debug\net6.0\Payroll.Domain.Business.deps.json
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\bin\Debug\net6.0\Payroll.Domain.Business.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\bin\Debug\net6.0\Payroll.Domain.Business.pdb
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\bin\Debug\net6.0\Payroll.Domain.Data.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\bin\Debug\net6.0\Payroll.Domain.Shared.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\bin\Debug\net6.0\Payroll.Domain.Data.pdb
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\bin\Debug\net6.0\Payroll.Domain.Shared.pdb
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.csproj.AssemblyReference.cache
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.AssemblyInfoInputs.cache
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.AssemblyInfo.cs
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.csproj.CoreCompileInputs.cache
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.csproj.CopyComplete
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\refint\Payroll.Domain.Business.dll
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\Payroll.Domain.Business.pdb
+C:\Users\nan010421\source\repos\Payroll.Domain.Business\obj\Debug\net6.0\ref\Payroll.Domain.Business.dll

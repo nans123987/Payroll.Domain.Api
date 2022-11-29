@@ -2,10 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Payroll.Domain.Shared.Entities;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Threading.Tasks;
 
 namespace Payroll.Domain.Data.Repositories
 {
@@ -24,6 +21,9 @@ namespace Payroll.Domain.Data.Repositories
             ILogger<EmployeeRepository> logger,
             IDbConnectionFactory connectionFactory): base(connectionFactory)
         {
+            ArgumentNullException.ThrowIfNull(logger, nameof(logger));
+            ArgumentNullException.ThrowIfNull(connectionFactory, nameof(connectionFactory));
+
             _logger = logger;
         }
         public async Task CreateEmployeeBenefitEnrollmentAsync(int clientId, Guid employeeId, Guid benefitPlanId)

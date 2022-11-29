@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Payroll.Domain.Shared.Models
+﻿namespace Payroll.Domain.Shared.Models
 {
     public class EmployeeBenefitPlanEnrollmentRequest
     {

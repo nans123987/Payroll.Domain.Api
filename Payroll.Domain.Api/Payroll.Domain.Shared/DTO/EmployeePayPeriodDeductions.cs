@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Payroll.Domain.Shared.DTO
+﻿namespace Payroll.Domain.Shared.DTO
 {
     public class EmployeePayPeriodDeductions
     {

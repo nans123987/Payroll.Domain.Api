@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Payroll.Domain.Shared.Entities
+﻿namespace Payroll.Domain.Shared.Entities
 {
     public class EmployeeBenefit
     {

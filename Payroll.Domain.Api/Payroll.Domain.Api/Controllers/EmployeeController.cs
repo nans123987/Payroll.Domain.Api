@@ -1,14 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Payroll.Domain.Api.Authorization;
-using Payroll.Domain.Business.Services;
-using Payroll.Domain.Shared.Models;
-using System.Threading.Tasks;
-
-namespace Payroll.Domain.Api.Controllers
+﻿namespace Payroll.Domain.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class EmployeeController : BaseSecureApiController
     {
         private readonly IEmployeeEnrollmentService _employeeEnrollmentService;
         public EmployeeController(IEmployeeEnrollmentService employeeEnrollmentService)

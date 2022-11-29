@@ -1,10 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using Payroll.Domain.Shared.Models;
-using System;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Payroll.Domain.Api.Authorization
 {
@@ -15,18 +9,18 @@ namespace Payroll.Domain.Api.Authorization
 
         public AuthorizeAttribute(params Roles[] roles)
         {
-            _roles = roles ?? new Roles[] { };
+            _roles = roles ?? Array.Empty<Roles>();
         }
 
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             // skip authorization if action is decorated with [AllowAnonymous] attribute
-            var allowAnonymous = context.ActionDescriptor.EndpointMetadata.OfType<AllowAnonymousAttribute>().Any();
+            var allowAnonymous = context.ActionDescriptor.EndpointMetadata.OfType<AllowAnonymous>().Any();
             if (allowAnonymous)
                 return;
 
             // check if user exists in httpContext
-            var user = (User)context.HttpContext.Items["User"];
+            var user = (User?)context.HttpContext.Items["User"];
             if (user == null)
                 //no token provided
                 context.Result = new JsonResult(new { message = "Not Authenticated" }) { StatusCode = StatusCodes.Status401Unauthorized };

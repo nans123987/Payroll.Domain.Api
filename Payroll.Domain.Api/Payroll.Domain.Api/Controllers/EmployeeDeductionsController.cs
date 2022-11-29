@@ -1,17 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Payroll.Domain.Business.Services;
-using Payroll.Domain.Shared.DTO;
-using Payroll.Domain.Shared.Models;
-using System;
-using System.Threading.Tasks;
-using AuthorizeAttribute = Payroll.Domain.Api.Authorization.AuthorizeAttribute;
-
-namespace Payroll.Domain.Api.Controllers
+﻿namespace Payroll.Domain.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class EmployeeDeductionsController : ControllerBase
+    public class EmployeeDeductionsController : BaseSecureApiController
     {
         private readonly IPayrollService _payrollService;
 

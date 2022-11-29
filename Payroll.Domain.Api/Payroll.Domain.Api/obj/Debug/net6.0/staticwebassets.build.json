@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QyZn/kqSnWVbiKsXww6OYytdGTbEAS3CaJl1nnX5KTE=",
+  "Source": "Payroll.Domain.Api",
+  "BasePath": "_content/Payroll.Domain.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

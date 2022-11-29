@@ -1,9 +1,3 @@
-using Microsoft.AspNetCore.Http;
-using Payroll.Domain.Business.Services;
-using Payroll.Domain.Shared.Utils;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Payroll.Domain.Api.Middlewares
 {
     public class JwtMiddleware
@@ -18,6 +12,10 @@ namespace Payroll.Domain.Api.Middlewares
         public async Task Invoke(HttpContext context, IUserService userService, IJwtUtils jwtUtils)
         {
             var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+            if (token == null)
+                throw new ArgumentNullException($"{token}Authentication token is required");
+
+
             var userId = jwtUtils.ValidateJwtToken(token);
             if (userId != null)
             {

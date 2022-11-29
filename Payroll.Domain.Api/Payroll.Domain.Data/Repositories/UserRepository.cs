@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using Payroll.Domain.Shared.Models;
 using System.Data;
-using System.Threading.Tasks;
 
 namespace Payroll.Domain.Data.Repositories
 {

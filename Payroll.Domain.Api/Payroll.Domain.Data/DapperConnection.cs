@@ -4,11 +4,13 @@ namespace Payroll.Domain.Data
 {
     public abstract class SecurityDapperConnection
     {
-        private IDbConnection _dbConnection;
+        private IDbConnection? _dbConnection;
         private readonly IDbConnectionFactory _dbConnectionFactory;
 
         public SecurityDapperConnection(IDbConnectionFactory dbConnectionFactory)
         {
+            ArgumentNullException.ThrowIfNull(dbConnectionFactory, nameof(dbConnectionFactory));
+
             _dbConnectionFactory = dbConnectionFactory;
         }
 
@@ -29,7 +31,7 @@ namespace Payroll.Domain.Data
 
     public abstract class PayrollDapperConnection
     {
-        private IDbConnection _dbConnection;
+        private IDbConnection? _dbConnection;
         private readonly IDbConnectionFactory _dbConnectionFactory;
 
         public PayrollDapperConnection(IDbConnectionFactory dbConnectionFactory)

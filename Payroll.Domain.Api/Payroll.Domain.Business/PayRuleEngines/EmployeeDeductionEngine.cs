@@ -1,17 +1,17 @@
-﻿using Payroll.Domain.Shared.DTO;
+﻿using Payroll.Domain.Business.RuleHelpers;
 using Payroll.Domain.Shared.Enums;
-using System;
-using System.Linq;
 
 namespace Payroll.Domain.Business.PayRuleEngines
 {
     public class EmployeeDeductionEngine : IPayRuleEngine
     {
-        private IPayrollContext _context;
+        private IPayrollContext? _context;
         public PayrollEngineSortType Sort => PayrollEngineSortType.EmployeeDeductionEngine;
 
         public IPayrollContext Execute(IPayrollContext payrollContext)
         {
+            ArgumentNullException.ThrowIfNull(payrollContext, nameof(payrollContext));
+
             _context = payrollContext;
 
             foreach (var employee in _context.Employees) {
@@ -27,13 +27,13 @@ namespace Payroll.Domain.Business.PayRuleEngines
                 var employeeAnnualDeductionAmount = benefitPlan.EmployeeBenefitDeductionAmount;
 
                 if (employeeAnnualDeductionAmount > 0) {
+                    
                     //apply discount of 10% if the first name starts with A
-                    var hasDiscount = employee.FirstName.StartsWith("a", StringComparison.OrdinalIgnoreCase);
-
+                    var hasDiscount = employee.FirstName?.StartsWith("a", StringComparison.OrdinalIgnoreCase) ?? false;
                     //if discount needs to be applied then calculate the percentage applicable for the deduction
                     if (hasDiscount) {
-                        var applicableBenefitDeductionAfterDiscount = (100 - _context.ApplicableDiscount) / 100;
-                        employeeAnnualDeductionAmount *= applicableBenefitDeductionAfterDiscount;
+                        employeeAnnualDeductionAmount = employeeAnnualDeductionAmount
+                                                            .ComputeDeductionDiscount(_context.ApplicableDiscount);
                     }
 
                     var employeeDeductionAmount = decimal.Round(employeeAnnualDeductionAmount / _context.NoOfPayPeriods, 2);
@@ -44,7 +44,7 @@ namespace Payroll.Domain.Business.PayRuleEngines
                             {
                                 EmployeeDeductionAmount = employeeDeductionAmount,
                                 TotalPayPeriodDeduction = employeeDeductionAmount,
-                                NetPay = employee.BasePay - employeeDeductionAmount
+                                NetPay = Employee.BasePay - employeeDeductionAmount
                             }
                         );
                 }

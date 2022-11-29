@@ -1,8 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Payroll.Domain.Data;
-using Payroll.Domain.Data.Repositories;
-using System.Collections.Generic;
+
 
 namespace Payroll.Domain.Business.Configuration
 {

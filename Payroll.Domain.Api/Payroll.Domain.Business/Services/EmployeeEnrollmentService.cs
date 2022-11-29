@@ -1,10 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-using Payroll.Domain.Data.Repositories;
-using Payroll.Domain.Shared.Models;
-using System;
-using System.Threading.Tasks;
-
-namespace Payroll.Domain.Business.Services
+﻿namespace Payroll.Domain.Business.Services
 {
     public interface IEmployeeEnrollmentService {
         Task CreateEmployeeBenefitEnrollmentAsync(EmployeeBenefitPlanEnrollmentRequest employeeBenefitPlanEnrollmentRequest);
@@ -18,6 +12,9 @@ namespace Payroll.Domain.Business.Services
             ILogger<EmployeeEnrollmentService> logger, 
             IEmployeeRepository employeeBenefitEnrollmentRepository)
         {
+            ArgumentNullException.ThrowIfNull(logger, nameof(logger));
+            ArgumentNullException.ThrowIfNull(employeeBenefitEnrollmentRepository, nameof(employeeBenefitEnrollmentRepository));
+
             _logger = logger;   
             _employeeBenefitEnrollmentRepository = employeeBenefitEnrollmentRepository;
         }

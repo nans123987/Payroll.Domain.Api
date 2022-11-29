@@ -1,12 +1,5 @@
-﻿using Payroll.Domain.Data.Repositories;
-using Payroll.Domain.Shared.Models;
-using Payroll.Domain.Shared.Utils;
-using System;
-using System.Threading.Tasks;
-
-namespace Payroll.Domain.Business.Services
+﻿namespace Payroll.Domain.Business.Services
 {
-
     public interface IUserService
     {
         Task<AuthenticateResponse> AuthenticateAsync(AuthenticateRequest model);
@@ -22,6 +15,9 @@ namespace Payroll.Domain.Business.Services
             IJwtUtils jwtUtils,
             IUserRepository userRepository)
         {
+            ArgumentNullException.ThrowIfNull(jwtUtils, nameof(jwtUtils));
+            ArgumentNullException.ThrowIfNull(userRepository, nameof(userRepository));
+
             _jwtUtils = jwtUtils;
             _userRepository = userRepository;  
         }

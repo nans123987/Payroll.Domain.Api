@@ -1,9 +1,5 @@
-using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Payroll.Domain.Api.Middlewares
 {
@@ -13,7 +9,9 @@ namespace Payroll.Domain.Api.Middlewares
 
         public ExceptionMiddleware(RequestDelegate next)
         {
-            _next = next ?? throw new ArgumentNullException(nameof(next));
+            ArgumentNullException.ThrowIfNull(next, nameof(next));
+
+            _next = next;
         }
 
         public async Task Invoke(HttpContext context)

@@ -1,5 +1,4 @@
 ﻿using Payroll.Domain.Shared.Entities;
-using System;
 
 namespace Payroll.Domain.Shared.DTO
 {

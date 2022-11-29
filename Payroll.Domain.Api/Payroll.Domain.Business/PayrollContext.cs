@@ -1,8 +1,4 @@
-﻿using Payroll.Domain.Shared.DTO;
-using Payroll.Domain.Shared.Entities;
-using System.Collections.Generic;
-
-namespace Payroll.Domain.Business
+﻿namespace Payroll.Domain.Business
 {
     public interface IPayrollContext {
         int ClientId { get; set; }

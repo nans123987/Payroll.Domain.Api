@@ -1,9 +1,6 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Logging;
 using Payroll.Domain.Shared.Entities;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Payroll.Domain.Data.Repositories
 {
@@ -16,6 +13,9 @@ namespace Payroll.Domain.Data.Repositories
         public BenefitPlanRepository(ILogger<BenefitPlanRepository> logger, IDbConnectionFactory dbConnectionFactory): 
             base(dbConnectionFactory)
         {
+            ArgumentNullException.ThrowIfNull(logger, nameof(logger));
+            ArgumentNullException.ThrowIfNull(dbConnectionFactory, nameof(dbConnectionFactory));
+
             _logger = logger; 
         }
 
