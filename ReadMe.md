@@ -9,9 +9,9 @@ This project tries to follow Clean Architecture and DDD
 
 |Project Name 		          |Dependent On                   |Remarks                      |
 |-----------------------------|------------------------|-----------------------------|
-|Payroll.Domain.API           |`Shared and Business`   | As the name implies this will have all the endpoints and configuration for retriveing data,including security |
-|Payroll.Domain.Business      |`Data`                  | this holds all the business rules and logic to compute the employee deductions and aggregate|
-|Payroll.Domain.Data  		  |`Shared`                | holds all the repositories to read data from the data source|
+|Payroll.Domain.API           |`Payroll.Domain.Shared` and `Payroll.Domain.Business`   | As the name implies this will have all the endpoints and configuration for retriveing data,including security |
+|Payroll.Domain.Business      |`Payroll.Domain.Data` and `Payroll.Domain.Shared`                 | this holds all the business rules and logic to compute the employee deductions and aggregate|
+|Payroll.Domain.Data  		  |`Payroll.Domain.Shared`                | holds all the repositories to read data from the data source|
 |Payroll.Domain.Shared        |``              		   | this holds all entities, models, DTOS and enums|
 
 ## Run Locally
