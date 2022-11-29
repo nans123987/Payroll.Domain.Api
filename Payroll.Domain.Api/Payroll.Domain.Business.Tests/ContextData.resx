@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DependentDeductionEngineInputContext" xml:space="preserve">
+    <value>{"ClientId":301190,"ApplicableDiscount":10.0,"NoOfPayPeriods":26,"Employees":[{"Id":"57469f28-ce50-4978-8eb7-548f4ae7ae3f","EmployeeId":1001,"ClientId":301190,"FirstName":"Arron","LastName":"Admin","IsActive":true},{"Id":"25700e6b-5d64-41e2-9670-06d31bf338b6","EmployeeId":1002,"ClientId":301190,"FirstName":"Emily","LastName":"Employee","IsActive":true},{"Id":"606200aa-b1ea-4d86-802a-32a7c139bf97","EmployeeId":1003,"ClientId":301190,"FirstName":"Darren","LastName":"Employee","IsActive":true},{"Id":"8ec5e1e1-0153-400c-8000-d976c98ab0f0","EmployeeId":1004,"ClientId":301190,"FirstName":"AJ","LastName":"Employee","IsActive":true}],"BenefitPlans":[{"Id":"b14bd2ec-4131-4ab9-9b50-2fa738b3bef5","BenefitPlanProviderId":"00000000-0000-0000-0000-000000000000","ClientId":301190,"BenefitPlanName":"United Health Care - PPO","BenefitDeductionCode":"Health","EmployeeBenefitDeductionAmount":1000.0,"DependentBenefitDeductionAmount":500.0},{"Id":"c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8","BenefitPlanProviderId":"00000000-0000-0000-0000-000000000000","ClientId":301190,"BenefitPlanName":"Athena - PPO","BenefitDeductionCode":"Health","EmployeeBenefitDeductionAmount":1000.0,"DependentBenefitDeductionAmount":500.0}],"EmployeeDependents":[{"DependentId":"9f1056d7-83d9-45d6-ba5c-cf7c4b3efff9","ClientId":301190,"FirstName":"Rocky","LastName":"EmilyC","Relationship":1,"EmployeeId":"25700e6b-5d64-41e2-9670-06d31bf338b6"},{"DependentId":"fde2eebc-3e89-4e33-b4b2-4222431c461f","ClientId":301190,"FirstName":"Mike","LastName":"EmilyS","Relationship":2,"EmployeeId":"25700e6b-5d64-41e2-9670-06d31bf338b6"},{"DependentId":"4cfebd62-50a6-4afc-af57-5ab7704162a0","ClientId":301190,"FirstName":"Erick","LastName":"DarrenC","Relationship":1,"EmployeeId":"606200aa-b1ea-4d86-802a-32a7c139bf97"},{"DependentId":"8c1f7ce3-95e8-4912-9135-b96428f62643","ClientId":301190,"FirstName":"Anthony","LastName":"DarrenP","Relationship":3,"EmployeeId":"606200aa-b1ea-4d86-802a-32a7c139bf97"},{"DependentId":"02bb103c-e912-4c8f-9aaf-82d455ef1ab2","ClientId":301190,"FirstName":"Mark","LastName":"AJS","Relationship":2,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0"},{"DependentId":"2cf5f30d-10d9-47e0-a954-f73074734f71","ClientId":301190,"FirstName":"Steven","LastName":"AJP","Relationship":3,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0"}],"EmployeeBenefits":[{"Id":"806382ee-8754-4e7a-818e-55a432d434e3","ClientId":301190,"EmployeeId":"606200aa-b1ea-4d86-802a-32a7c139bf97","BenefitPlanId":"b14bd2ec-4131-4ab9-9b50-2fa738b3bef5"},{"Id":"6f2adb4b-d35b-436b-a81c-b497a1cc8768","ClientId":301190,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0","BenefitPlanId":"c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8"},{"Id":"92ab5d1e-5aba-44df-b5cd-d4fe6aba5254","ClientId":301190,"EmployeeId":"25700e6b-5d64-41e2-9670-06d31bf338b6","BenefitPlanId":"b14bd2ec-4131-4ab9-9b50-2fa738b3bef5"}],"EmployeePayPeriodsDeductions":[]}</value>
+  </data>
+  <data name="EmployeeDeductionEngineInputContext" xml:space="preserve">
+    <value>{"ClientId":301190,"ApplicableDiscount":10.0,"NoOfPayPeriods":26,"Employees":[{"Id":"57469f28-ce50-4978-8eb7-548f4ae7ae3f","EmployeeId":1001,"ClientId":301190,"FirstName":"Arron","LastName":"Admin","IsActive":true},{"Id":"25700e6b-5d64-41e2-9670-06d31bf338b6","EmployeeId":1002,"ClientId":301190,"FirstName":"Emily","LastName":"Employee","IsActive":true},{"Id":"606200aa-b1ea-4d86-802a-32a7c139bf97","EmployeeId":1003,"ClientId":301190,"FirstName":"Darren","LastName":"Employee","IsActive":true},{"Id":"8ec5e1e1-0153-400c-8000-d976c98ab0f0","EmployeeId":1004,"ClientId":301190,"FirstName":"AJ","LastName":"Employee","IsActive":true}],"BenefitPlans":[{"Id":"b14bd2ec-4131-4ab9-9b50-2fa738b3bef5","BenefitPlanProviderId":"00000000-0000-0000-0000-000000000000","ClientId":301190,"BenefitPlanName":"United Health Care - PPO","BenefitDeductionCode":"Health","EmployeeBenefitDeductionAmount":1000.0,"DependentBenefitDeductionAmount":500.0},{"Id":"c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8","BenefitPlanProviderId":"00000000-0000-0000-0000-000000000000","ClientId":301190,"BenefitPlanName":"Athena - PPO","BenefitDeductionCode":"Health","EmployeeBenefitDeductionAmount":1000.0,"DependentBenefitDeductionAmount":500.0}],"EmployeeDependents":[{"DependentId":"9f1056d7-83d9-45d6-ba5c-cf7c4b3efff9","ClientId":301190,"FirstName":"Rocky","LastName":"EmilyC","Relationship":1,"EmployeeId":"25700e6b-5d64-41e2-9670-06d31bf338b6"},{"DependentId":"fde2eebc-3e89-4e33-b4b2-4222431c461f","ClientId":301190,"FirstName":"Mike","LastName":"EmilyS","Relationship":2,"EmployeeId":"25700e6b-5d64-41e2-9670-06d31bf338b6"},{"DependentId":"4cfebd62-50a6-4afc-af57-5ab7704162a0","ClientId":301190,"FirstName":"Erick","LastName":"DarrenC","Relationship":1,"EmployeeId":"606200aa-b1ea-4d86-802a-32a7c139bf97"},{"DependentId":"8c1f7ce3-95e8-4912-9135-b96428f62643","ClientId":301190,"FirstName":"Anthony","LastName":"DarrenP","Relationship":3,"EmployeeId":"606200aa-b1ea-4d86-802a-32a7c139bf97"},{"DependentId":"02bb103c-e912-4c8f-9aaf-82d455ef1ab2","ClientId":301190,"FirstName":"Mark","LastName":"AJS","Relationship":2,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0"},{"DependentId":"2cf5f30d-10d9-47e0-a954-f73074734f71","ClientId":301190,"FirstName":"Steven","LastName":"AJP","Relationship":3,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0"}],"EmployeeBenefits":[{"Id":"806382ee-8754-4e7a-818e-55a432d434e3","ClientId":301190,"EmployeeId":"606200aa-b1ea-4d86-802a-32a7c139bf97","BenefitPlanId":"b14bd2ec-4131-4ab9-9b50-2fa738b3bef5"},{"Id":"6f2adb4b-d35b-436b-a81c-b497a1cc8768","ClientId":301190,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0","BenefitPlanId":"c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8"},{"Id":"92ab5d1e-5aba-44df-b5cd-d4fe6aba5254","ClientId":301190,"EmployeeId":"25700e6b-5d64-41e2-9670-06d31bf338b6","BenefitPlanId":"b14bd2ec-4131-4ab9-9b50-2fa738b3bef5"}],"EmployeePayPeriodsDeductions":[{"EmployeeId":"25700e6b-5d64-41e2-9670-06d31bf338b6","EmployeeName":"Employee,Emily","EmployeeDeductionAmount":38.46,"DependentDeductionAmount":0.0,"TotalPayPeriodDeduction":38.46,"NetPay":1961.54},{"EmployeeId":"606200aa-b1ea-4d86-802a-32a7c139bf97","EmployeeName":"Employee,Darren","EmployeeDeductionAmount":38.46,"DependentDeductionAmount":0.0,"TotalPayPeriodDeduction":38.46,"NetPay":1961.54},{"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0","EmployeeName":"Employee,AJ","EmployeeDeductionAmount":34.62,"DependentDeductionAmount":0.0,"TotalPayPeriodDeduction":34.62,"NetPay":1965.38}]}</value>
+  </data>
+  <data name="EmployeeDeductionIngineInputWithDiscount" xml:space="preserve">
+    <value>{"ClientId":301190,"ApplicableDiscount":10.0,"NoOfPayPeriods":26,"Employees":[{"Id":"8ec5e1e1-0153-400c-8000-d976c98ab0f0","EmployeeId":1004,"ClientId":301190,"FirstName":"AJ","LastName":"Employee","IsActive":true}],"BenefitPlans":[{"Id":"b14bd2ec-4131-4ab9-9b50-2fa738b3bef5","BenefitPlanProviderId":"00000000-0000-0000-0000-000000000000","ClientId":301190,"BenefitPlanName":"United Health Care - PPO","BenefitDeductionCode":"Health","EmployeeBenefitDeductionAmount":1000.0,"DependentBenefitDeductionAmount":500.0},{"Id":"c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8","BenefitPlanProviderId":"00000000-0000-0000-0000-000000000000","ClientId":301190,"BenefitPlanName":"Athena - PPO","BenefitDeductionCode":"Health","EmployeeBenefitDeductionAmount":1000.0,"DependentBenefitDeductionAmount":500.0}],"EmployeeDependents":[{"DependentId":"02bb103c-e912-4c8f-9aaf-82d455ef1ab2","ClientId":301190,"FirstName":"Mark","LastName":"AJS","Relationship":2,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0"},{"DependentId":"2cf5f30d-10d9-47e0-a954-f73074734f71","ClientId":301190,"FirstName":"Steven","LastName":"AJP","Relationship":3,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0"}],"EmployeeBenefits":[{"Id":"6f2adb4b-d35b-436b-a81c-b497a1cc8768","ClientId":301190,"EmployeeId":"8ec5e1e1-0153-400c-8000-d976c98ab0f0","BenefitPlanId":"c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8"}],"EmployeePayPeriodsDeductions":[]}</value>
+  </data>
+</root>
