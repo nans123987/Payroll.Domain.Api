@@ -1137,11 +1137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nan010421\\source\\repos\\Payroll.Domain.Data\\Payroll.Domain.Data.csproj",
+      "projectUniqueName": "C:\\Users\\nan010421\\OneDrive - Paycor, Inc\\Desktop\\Payroll Domain API with DB Files\\Payroll.Domain.Api\\Payroll.Domain.Data\\Payroll.Domain.Data.csproj",
       "projectName": "Payroll.Domain.Data",
-      "projectPath": "C:\\Users\\nan010421\\source\\repos\\Payroll.Domain.Data\\Payroll.Domain.Data.csproj",
+      "projectPath": "C:\\Users\\nan010421\\OneDrive - Paycor, Inc\\Desktop\\Payroll Domain API with DB Files\\Payroll.Domain.Api\\Payroll.Domain.Data\\Payroll.Domain.Data.csproj",
       "packagesPath": "C:\\Users\\nan010421\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nan010421\\source\\repos\\Payroll.Domain.Data\\obj\\",
+      "outputPath": "C:\\Users\\nan010421\\OneDrive - Paycor, Inc\\Desktop\\Payroll Domain API with DB Files\\Payroll.Domain.Api\\Payroll.Domain.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1162,8 +1162,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nan010421\\source\\repos\\Payroll.Domain.Shared\\Payroll.Domain.Shared.csproj": {
-              "projectPath": "C:\\Users\\nan010421\\source\\repos\\Payroll.Domain.Shared\\Payroll.Domain.Shared.csproj"
+            "C:\\Users\\nan010421\\OneDrive - Paycor, Inc\\Desktop\\Payroll Domain API with DB Files\\Payroll.Domain.Api\\Payroll.Domain.Shared\\Payroll.Domain.Shared.csproj": {
+              "projectPath": "C:\\Users\\nan010421\\OneDrive - Paycor, Inc\\Desktop\\Payroll Domain API with DB Files\\Payroll.Domain.Api\\Payroll.Domain.Shared\\Payroll.Domain.Shared.csproj"
             }
           }
         }
