@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ServiceTests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Payroll.Domain.Business\Payroll.Domain.Business.csproj" />
     <ProjectReference Include="..\Payroll.Domain.Shared\Payroll.Domain.Shared.csproj" />
   </ItemGroup>

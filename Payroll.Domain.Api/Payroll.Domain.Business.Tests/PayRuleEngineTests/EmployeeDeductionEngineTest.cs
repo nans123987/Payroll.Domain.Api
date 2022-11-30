@@ -27,7 +27,9 @@ namespace Payroll.Domain.Business.Tests.PayRuleEngineTests
             //arrange
             var contextString = resourceManager?.GetString("DependentDeductionEngineInputContext");
             ArgumentNullException.ThrowIfNull(contextString);
+
             _context = JsonConvert.DeserializeObject<PayrollContext>(contextString);
+
             //act
             var processedContext = _employeeDeductionEngine?.Execute(_context);
 
@@ -64,11 +66,12 @@ namespace Payroll.Domain.Business.Tests.PayRuleEngineTests
             var processedContext = _employeeDeductionEngine?.Execute(_context);
 
             //assert
-            Assert.AreEqual(processedContext.EmployeePayPeriodsDeductions.Count, 0);
+            Assert.AreEqual(processedContext?.EmployeePayPeriodsDeductions.Count, 0);
         }
 
         [TestMethod]
-        public void Process_EmployeeDeductions_With_Discount() { 
+        public void Process_EmployeeDeductions_With_Discount() {
+            
             //arrange
             var contextString = resourceManager?.GetString("EmployeeDeductionIngineInputWithDiscount");
             _context = JsonConvert.DeserializeObject<PayrollContext>(contextString);
