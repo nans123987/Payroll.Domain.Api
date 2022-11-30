@@ -25,7 +25,7 @@ namespace Payroll.Domain.Api.Authorization
                 //no token provided
                 context.Result = new JsonResult(new { message = "Not Authenticated" }) { StatusCode = StatusCodes.Status401Unauthorized };
 
-            else if ((_roles.Any() && !_roles.Contains(user.Role)))
+            else if (_roles.Any() && !_roles.Contains(user.Role))
             {
                 //not authorized
                 context.Result = new JsonResult(new { message = "You do not have enough privileges to access this resource" }) 
