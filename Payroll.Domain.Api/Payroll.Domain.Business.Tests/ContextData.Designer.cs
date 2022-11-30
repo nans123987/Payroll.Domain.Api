@@ -86,5 +86,14 @@ namespace Payroll.Domain.Business.Tests {
                 return ResourceManager.GetString("EmployeeDeductionIngineInputWithDiscount", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;ClientId&quot;:301190,&quot;ApplicableDiscount&quot;:10.0,&quot;NoOfPayPeriods&quot;:26,&quot;Employees&quot;:[{&quot;Id&quot;:&quot;57469f28-ce50-4978-8eb7-548f4ae7ae3f&quot;,&quot;EmployeeId&quot;:1001,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Arron&quot;,&quot;LastName&quot;:&quot;Admin&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;25700e6b-5d64-41e2-9670-06d31bf338b6&quot;,&quot;EmployeeId&quot;:1002,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Emily&quot;,&quot;LastName&quot;:&quot;Employee&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;606200aa-b1ea-4d86-802a-32a7c139bf97&quot;,&quot;EmployeeId&quot;:1003,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Darren&quot;,&quot;LastName&quot;:&quot;Employee&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;8ec5e1e1- [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PayrollServiceProccessedContext {
+            get {
+                return ResourceManager.GetString("PayrollServiceProccessedContext", resourceCulture);
+            }
+        }
     }
 }
