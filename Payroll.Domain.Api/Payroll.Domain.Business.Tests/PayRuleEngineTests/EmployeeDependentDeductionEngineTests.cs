@@ -1,11 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
-using Payroll.Domain.Business.PayRuleEngines;
-using System;
-using System.Linq;
-using System.Resources;
-
-namespace Payroll.Domain.Business.Tests.PayRuleEngineTests
+﻿namespace Payroll.Domain.Business.Tests.PayRuleEngineTests
 {
     [TestClass]
     public class EmployeeDependentDeductionEngineTests
@@ -26,7 +19,6 @@ namespace Payroll.Domain.Business.Tests.PayRuleEngineTests
         {
             //arrange
             var contextString = resourceManager?.GetString("DependentDeductionEngineInputContext");
-            ArgumentNullException.ThrowIfNull(contextString);
 
             _context = JsonConvert.DeserializeObject<PayrollContext>(contextString);
 
@@ -42,7 +34,6 @@ namespace Payroll.Domain.Business.Tests.PayRuleEngineTests
         {
             //arrange
             var contextString = resourceManager?.GetString("DependentDeductionEngineInputContext");
-            ArgumentNullException.ThrowIfNull(contextString);
 
             _context = JsonConvert.DeserializeObject<PayrollContext>(contextString);
             _context?.EmployeeDependents.Clear();

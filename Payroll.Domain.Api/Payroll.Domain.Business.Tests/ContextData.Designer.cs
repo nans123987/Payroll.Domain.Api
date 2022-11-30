@@ -61,11 +61,29 @@ namespace Payroll.Domain.Business.Tests {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to [{&quot;Id&quot;:&quot;b14bd2ec-4131-4ab9-9b50-2fa738b3bef5&quot;,&quot;BenefitPlanProviderId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;ClientId&quot;:301190,&quot;BenefitPlanName&quot;:&quot;United Health Care - PPO&quot;,&quot;BenefitDeductionCode&quot;:&quot;Health&quot;,&quot;EmployeeBenefitDeductionAmount&quot;:1000.0,&quot;DependentBenefitDeductionAmount&quot;:500.0},{&quot;Id&quot;:&quot;c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8&quot;,&quot;BenefitPlanProviderId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;ClientId&quot;:301190,&quot;BenefitPlanName&quot;:&quot;Athena - PPO&quot;,&quot;BenefitDeductionCode&quot;:&quot;Health&quot;,&quot;EmployeeBenefitDeductionAmount&quot;:100 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BenefitPlans {
+            get {
+                return ResourceManager.GetString("BenefitPlans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;ClientId&quot;:301190,&quot;ApplicableDiscount&quot;:10.0,&quot;NoOfPayPeriods&quot;:26,&quot;Employees&quot;:[{&quot;Id&quot;:&quot;57469f28-ce50-4978-8eb7-548f4ae7ae3f&quot;,&quot;EmployeeId&quot;:1001,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Arron&quot;,&quot;LastName&quot;:&quot;Admin&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;25700e6b-5d64-41e2-9670-06d31bf338b6&quot;,&quot;EmployeeId&quot;:1002,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Emily&quot;,&quot;LastName&quot;:&quot;Employee&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;606200aa-b1ea-4d86-802a-32a7c139bf97&quot;,&quot;EmployeeId&quot;:1003,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Darren&quot;,&quot;LastName&quot;:&quot;Employee&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;8ec5e1e1- [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DependentDeductionEngineInputContext {
             get {
                 return ResourceManager.GetString("DependentDeductionEngineInputContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;Id&quot;:&quot;806382ee-8754-4e7a-818e-55a432d434e3&quot;,&quot;ClientId&quot;:301190,&quot;EmployeeId&quot;:&quot;606200aa-b1ea-4d86-802a-32a7c139bf97&quot;,&quot;BenefitPlanId&quot;:&quot;b14bd2ec-4131-4ab9-9b50-2fa738b3bef5&quot;},{&quot;Id&quot;:&quot;6f2adb4b-d35b-436b-a81c-b497a1cc8768&quot;,&quot;ClientId&quot;:301190,&quot;EmployeeId&quot;:&quot;8ec5e1e1-0153-400c-8000-d976c98ab0f0&quot;,&quot;BenefitPlanId&quot;:&quot;c58cc50a-8d87-48e7-b3ae-f84fa61ca3c8&quot;},{&quot;Id&quot;:&quot;92ab5d1e-5aba-44df-b5cd-d4fe6aba5254&quot;,&quot;ClientId&quot;:301190,&quot;EmployeeId&quot;:&quot;25700e6b-5d64-41e2-9670-06d31bf338b6&quot;,&quot;BenefitPlanId&quot;:&quot;b14bd2ec-4131-4ab9-9b50-2fa738b3bef5&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EmployeeBenefits {
+            get {
+                return ResourceManager.GetString("EmployeeBenefits", resourceCulture);
             }
         }
         
@@ -84,6 +102,24 @@ namespace Payroll.Domain.Business.Tests {
         internal static string EmployeeDeductionIngineInputWithDiscount {
             get {
                 return ResourceManager.GetString("EmployeeDeductionIngineInputWithDiscount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;DependentId&quot;:&quot;9f1056d7-83d9-45d6-ba5c-cf7c4b3efff9&quot;,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Rocky&quot;,&quot;LastName&quot;:&quot;EmilyC&quot;,&quot;Relationship&quot;:1,&quot;EmployeeId&quot;:&quot;25700e6b-5d64-41e2-9670-06d31bf338b6&quot;},{&quot;DependentId&quot;:&quot;fde2eebc-3e89-4e33-b4b2-4222431c461f&quot;,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Mike&quot;,&quot;LastName&quot;:&quot;EmilyS&quot;,&quot;Relationship&quot;:2,&quot;EmployeeId&quot;:&quot;25700e6b-5d64-41e2-9670-06d31bf338b6&quot;},{&quot;DependentId&quot;:&quot;4cfebd62-50a6-4afc-af57-5ab7704162a0&quot;,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Erick&quot;,&quot;LastName&quot;:&quot;DarrenC&quot;,&quot;Relationship&quot;:1,&quot;EmployeeId&quot;:&quot;6062 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EmployeeDependents {
+            get {
+                return ResourceManager.GetString("EmployeeDependents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;Id&quot;:&quot;57469f28-ce50-4978-8eb7-548f4ae7ae3f&quot;,&quot;EmployeeId&quot;:1001,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Arron&quot;,&quot;LastName&quot;:&quot;Admin&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;25700e6b-5d64-41e2-9670-06d31bf338b6&quot;,&quot;EmployeeId&quot;:1002,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Emily&quot;,&quot;LastName&quot;:&quot;Employee&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;606200aa-b1ea-4d86-802a-32a7c139bf97&quot;,&quot;EmployeeId&quot;:1003,&quot;ClientId&quot;:301190,&quot;FirstName&quot;:&quot;Darren&quot;,&quot;LastName&quot;:&quot;Employee&quot;,&quot;IsActive&quot;:true},{&quot;Id&quot;:&quot;8ec5e1e1-0153-400c-8000-d976c98ab0f0&quot;,&quot;EmployeeId&quot;:1004,&quot;ClientId&quot;:301190,&quot;FirstName&quot;: [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Employees {
+            get {
+                return ResourceManager.GetString("Employees", resourceCulture);
             }
         }
         
