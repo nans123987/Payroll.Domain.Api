@@ -26,6 +26,7 @@
         public async Task<AuthenticateResponse> AuthenticateAsync(AuthenticateRequest model)
         {
             var user = await _userRepository.GetUserByCredentialsAsync(model.Username);
+            //added hash in database using https://bcrypt.online/
 
             // validate
             if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))

@@ -1,5 +1,4 @@
 using Microsoft.Net.Http.Headers;
-using Payroll.Domain.Api.Configuration;
 using Payroll.Domain.Api.Middlewares;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
@@ -46,9 +45,9 @@ namespace Payroll.Domain.Api
             app.UseRouting();
             NoCacheResponse(app);
             app.UseAuthentication();
-            app.UseAuthorization();
+           
             app.UseMiddleware<JwtMiddleware>();
-
+            app.UseAuthorization();
 
             app.MapControllers();
 
