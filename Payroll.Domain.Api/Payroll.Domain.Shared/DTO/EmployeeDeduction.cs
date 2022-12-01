@@ -11,11 +11,6 @@ namespace Payroll.Domain.Shared.DTO
         public decimal TotalPayPeriodDeduction { get; set; }
         public decimal NetPay { get; set; }
 
-        public EmployeeDeduction()
-        {
-
-        }
-
         public EmployeeDeduction(Employee employee)
         {
             EmployeeId = employee.Id;
