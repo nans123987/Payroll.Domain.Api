@@ -39,15 +39,15 @@ namespace Payroll.Domain.Api
                 });
             }
 
-            app.UseMiddleware<ExceptionMiddleware>();
+           
             app.UseHttpsRedirection();
 
             app.UseRouting();
             NoCacheResponse(app);
             app.UseAuthentication();
-           
-            app.UseMiddleware<JwtMiddleware>();
             app.UseAuthorization();
+            app.UseMiddleware<ExceptionMiddleware>();
+            app.UseMiddleware<JwtMiddleware>();
 
             app.MapControllers();
 
